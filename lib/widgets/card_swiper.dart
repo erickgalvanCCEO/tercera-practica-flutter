@@ -15,9 +15,16 @@ class CardSwiper extends StatelessWidget {
       child: CarouselSlider(
           options: CarouselOptions(disableCenter: true),
           items: lista
-              .map((i) => const FadeInImage(
-                    placeholder: AssetImage('assets/no-image.jpg'),
-                    image: NetworkImage('https://via.placeholder.com/300x400'),
+              .map((i) => GestureDetector(
+                    onTap: () => Navigator.pushNamed(context, 'details'),
+                    child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20),
+                        child: const FadeInImage(
+                          image: NetworkImage(
+                              'https://via.placeholder.com/300x400'),
+                          placeholder: NetworkImage(
+                              'https://via.placeholder.com/300x400'),
+                        )),
                   ))
               .toList()),
     );
