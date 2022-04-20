@@ -5,26 +5,10 @@ description: A new Flutter project.
 
 publish_to: 'none' 
 
-
-
-assets:
-  -assets/
-
-
-
-
-
-
-
 version: 1.0.0+1
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
-
-
-
-
-
 
 
 dependencies:
@@ -55,6 +39,9 @@ dev_dependencies:
 
 
 flutter:
+  assets:
+    - assets/no-image.jpg
+    - assets/loading.gif
 
   
   
