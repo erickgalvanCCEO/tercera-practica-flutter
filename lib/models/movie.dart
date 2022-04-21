@@ -33,6 +33,14 @@ class Movies {
   double voteAverage;
   int voteCount;
 
+  String get fullPosterImg {
+    if (posterPath != null) {
+      return 'https://image.tmdb.org/t/p/w500/$posterPath';
+    } else {
+      return 'https://i.stack.imgur.com/GNhxO.png';
+    }
+  }
+
   factory Movies.fromJson(String str) => Movies.fromMap(json.decode(str));
 
   factory Movies.fromMap(Map<String, dynamic> json) => Movies(
