@@ -41,6 +41,10 @@ class Movies {
     }
   }
 
+  String get getTitle {
+    return title;
+  }
+
   factory Movies.fromJson(String str) => Movies.fromMap(json.decode(str));
 
   factory Movies.fromMap(Map<String, dynamic> json) => Movies(
