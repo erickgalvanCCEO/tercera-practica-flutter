@@ -64,7 +64,7 @@ class _MoviePoster extends StatelessWidget {
               child: FadeInImage(
                 placeholder: NetworkImage(movie.fullPosterImg),
                 image: NetworkImage(movie.fullPosterImg),
-                width: 130,
+                width: 131,
                 height: 190,
                 fit: BoxFit.cover,
               ),
